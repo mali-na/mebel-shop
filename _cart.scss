@@ -1,0 +1,270 @@
+ @-webkit-keyframes rotate-scale-down-hor {
+     0% {
+         -webkit-transform: scale(1) rotateX(0);
+         transform: scale(1) rotateX(0);
+     }
+
+     50% {
+         -webkit-transform: scale(0.5) rotateX(-180deg);
+         transform: scale(0.5) rotateX(-180deg);
+     }
+
+     100% {
+         -webkit-transform: scale(1) rotateX(-360deg);
+         transform: scale(1) rotateX(-360deg);
+     }
+ }
+
+ @keyframes rotate-scale-down-hor {
+     0% {
+         -webkit-transform: scale(1) rotateX(0);
+         transform: scale(1) rotateX(0);
+     }
+
+     50% {
+         -webkit-transform: scale(0.5) rotateX(-180deg);
+         transform: scale(0.5) rotateX(-180deg);
+     }
+
+     100% {
+         -webkit-transform: scale(1) rotateX(-360deg);
+         transform: scale(1) rotateX(-360deg);
+     }
+ }
+
+
+ .cr__box-top {
+     background-image: url(./img/cart-top.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     height: 400px;
+     margin-bottom: 64px;
+ }
+
+ .cr__main-box {
+     display: grid;
+     grid-template-columns: repeat(12, 1fr);
+     gap: 33px;
+     padding-bottom: 64px;
+ }
+
+
+
+ .cr {
+     grid-column: span 8;
+     display: flex;
+     flex-direction: column;
+
+     &__name-box {
+         display: flex;
+         justify-content: space-between;
+         padding-bottom: 14px;
+         color: #000;
+         font-family: Montserrat;
+         font-size: 16px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: normal;
+     }
+
+     &__content {
+         display: flex;
+         justify-content: space-between;
+         padding-top: 25px;
+         padding-bottom: 32px;
+         border-top: 0.5px solid #CACDD8;
+
+         &-item {
+             display: flex;
+             gap: 32px;
+             transition: all 0.3s;
+
+             &:hover {
+                 transform: scale(1.03);
+             }
+
+             &_info {
+                 width: 276px;
+                 display: flex;
+                 flex-direction: column;
+                 gap: 16px;
+             }
+
+             &_heding {
+                 color: #000;
+                 font-size: 24px;
+                 font-style: normal;
+                 font-weight: 500;
+                 line-height: normal;
+
+                 font-family: Montserrat;
+                 font-size: 24px;
+                 font-style: normal;
+                 font-weight: 500;
+                 line-height: normal;
+             }
+
+             &__prise-box {
+                 color: #050505;
+                 text-align: center;
+                 font-size: 16px;
+                 font-style: normal;
+                 font-weight: 500;
+                 line-height: normal;
+             }
+
+             &_link {
+                 margin-right: 32px;
+                 color: #000;
+                 text-align: center;
+                 font-size: 14px;
+                 font-style: normal;
+                 font-weight: 400;
+                 line-height: 210%;
+                 text-decoration-line: underline;
+
+                 &:hover {
+                     text-decoration: none;
+                 }
+             }
+         }
+
+         &__item-input {
+             color: #000;
+             border-radius: 6px;
+             border-color: transparent;
+             background: #F7F6F6;
+             width: 71px;
+             height: 51px;
+             outline: none;
+             padding-left: 10px;
+             padding-right: 10px;
+
+             text-align: center;
+             font-size: 14px;
+             font-style: normal;
+             font-weight: 600;
+             line-height: 210%;
+         }
+
+         &__button-box {
+             margin-top: 18px;
+             display: flex;
+             gap: 7px;
+         }
+
+         &__button {
+             border-radius: 50px;
+             border: 1px solid #000;
+             background-color: transparent;
+             display: flex;
+             width: 200px;
+             height: 37px;
+             justify-content: center;
+             align-items: center;
+
+             color: #000;
+             text-align: center;
+             font-family: Montserrat;
+             font-size: 14px;
+             font-style: normal;
+             font-weight: 400;
+             line-height: normal;
+             transition: color .3s;
+
+             &:hover {
+                 color: #FFF;
+                 background-color: #000;
+             }
+         }
+     }
+ }
+
+
+ .cr__form {
+     border-radius: 20px;
+     background: #F7F6F6;
+     grid-column: span 4;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding-top: 42px;
+
+     &_heading {
+         color: #000;
+         text-align: center;
+         // font-family: Poppins;
+         font-size: 24px;
+         font-style: normal;
+         font-weight: 600;
+         line-height: normal;
+         margin-bottom: 44px;
+
+     }
+
+     &_input-text {
+         width: 288px;
+         border: none;
+         border-bottom: 1px solid #CACDD8;
+         background: #F7F6F6;
+         color: #000;
+         text-align: start;
+         font-family: Montserrat;
+         font-size: 14px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: normal;
+         margin-bottom: 44px;
+         outline: none;
+
+         &::placeholder {
+             color: #000;
+             font-family: Montserrat;
+             font-size: 14px;
+             font-style: normal;
+             font-weight: 400;
+             line-height: normal;
+         }
+     }
+
+     &_chek-price {
+         color: #000;
+         font-family: Montserrat;
+         font-size: 24px;
+         font-style: normal;
+         font-weight: 500;
+         line-height: normal;
+         margin-top: 24px;
+         margin-bottom: 18px;
+     }
+
+     &_button {
+         width: 290px;
+         height: 41px;
+         border-radius: 20px;
+         border: 1px solid #040404;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-shrink: 0;
+
+         color: #000;
+         font-family: Montserrat;
+         font-size: 16px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: normal;
+         animation: rotate-scale-down-hor 0.65s linear 3s both;
+         transition: color .3s;
+
+         &:hover {
+             color: #FFF;
+             background-color: #000;
+         }
+     }
+ }
+
+ .cr__box-sale {
+     margin-bottom: 32px;
+ }
